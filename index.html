@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News homepage</title>
     <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./src/input.css">
 </head>
 <body class="flex flex-col items-center  pt-20 w-screen bg-gray-200 pb-10">
     <!-- header -->
@@ -16,11 +17,11 @@
         </div>
         <!-- header link box -->
         <div class="flex gap-12 no-underline text-xl">
-            <a href="">Home</a>
-            <a href="">New</a>
-            <a href="">Popular</a>
-            <a href="">Trending</a>
-            <a href="">Categories</a>
+            <a class="link-hover transition-all duration-100" href="">Home</a>
+            <a class="link-hover transition-all duration-100" href="">New</a>
+            <a class="link-hover transition-all duration-100" href="">Popular</a>
+            <a class="link-hover transition-all duration-100" href="">Trending</a>
+            <a class="link-hover transition-all duration-100" href="">Categories</a>
         </div>
     </section>
     <!-- main section -->
@@ -41,7 +42,7 @@
                 <div class="w-[50%] flex flex-col justify-between">
                     <span class="text-xl leading-10 text-gray-600"> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
                         But is it really fulfilling its promise?</span>
-                        <button class="tracking-[0.3em] w-[200px] h-[60px] bg-red-500 text-base font-bold text-gray-100">
+                        <button class="tracking-[0.3em] w-[200px] h-[60px] bg-red-500 text-base font-bold text-gray-100 hover:bg-gray-900 transition-all duration-100">
                             READ MORE
                         </button>
                 </div>
@@ -58,18 +59,18 @@
                 <!-- new content box -->
                 <div class="flex flex-col w-full h-full mt-6">
                     <!-- first new text -->
-                    <div class="flex flex-col gap-3 justify-center border-b-gray-500 border-solid border-b h-[33%]">
-                        <span class="font-bold text-2xl text-gray-100 text-start">Hydrogen VS Electric Cars</span>
+                    <div class="flex flex-col gap-3 justify-center border-b-gray-500 border-solid border-b h-[33%] group hover:cursor-pointer">
+                        <span class="font-bold text-2xl text-gray-100 text-start group-hover:text-orange-400 group-hover:cursor-pointer transition-all duration-100">Hydrogen VS Electric Cars</span>
                         <span class="text-xl text-gray-400 leading-8">Will hydrogen-fueled cars ever catch up to EVs?</span>
                     </div>
                     <!-- second new text -->
-                    <div class="flex flex-col gap-3 justify-center border-b-gray-500 border-solid border-b h-[33%]">
-                        <span class="font-bold text-2xl text-gray-100 text-start">The Downsides of AI Artistry</span>
+                    <div class="flex flex-col gap-3 justify-center border-b-gray-500 border-solid border-b h-[33%] group hover:cursor-pointer">
+                        <span class="font-bold text-2xl text-gray-100 text-start group-hover:text-orange-400 group-hover:cursor-pointer transition-all duration-100">The Downsides of AI Artistry</span>
                         <span class="text-xl text-gray-400 leading-8">What are the possible adverse effects of on-demand AI image generation?</span>
                     </div>
                     <!-- third new text -->
-                    <div class="flex flex-col gap-3 justify-center h-[33%]">
-                        <span class="font-bold text-2xl text-gray-100 text-start">Is VC Funding Drying Up?</span>
+                    <div class="flex flex-col gap-3 justify-center h-[33%] group hover:cursor-pointer">
+                        <span class="font-bold text-2xl text-gray-100 text-start group-hover:text-orange-400 transition-all duration-100">Is VC Funding Drying Up?</span>
                         <span class="text-xl text-gray-400 leading-8">Private funding by VC firms is down 50% YOY. We take a look at what that means.</span>
                     </div>
                 </div>
@@ -87,7 +88,7 @@
             <!-- texts -->
             <div class="flex flex-col justify-between w-[300px]">
                 <span class="text-5xl text-gray-400 font-bold">01</span>
-                <span class="text-2xl font-bold ">Reviving Retro PCs</span>
+                <span class="text-2xl font-bold transition-all duration-100 hover:text-orange-500 cursor-pointer">Reviving Retro PCs</span>
                 <span class="text-lg text-gray-500">What happens when old PCs are given modern upgrades?</span>
             </div>
         </div>
@@ -100,7 +101,7 @@
             <!-- texts -->
             <div class="flex flex-col justify-between w-[300px]">
                 <span class="text-5xl text-gray-400 font-bold">02</span>
-                <span class="text-2xl font-bold ">Top 10 Laptops of 2022</span>
+                <span class="text-2xl font-bold transition-all duration-100 hover:text-orange-500 cursor-pointer">Top 10 Laptops of 2022</span>
                 <span class="text-lg text-gray-500">Our best picks for various needs and budgets.</span>
             </div>
         </div>
@@ -113,7 +114,7 @@
             <!-- texts -->
             <div class="flex flex-col justify-between w-[300px]">
                 <span class="text-5xl text-gray-400 font-bold">03</span>
-                <span class="text-2xl font-bold ">The Growth of Gaming</span>
+                <span class="text-2xl font-bold transition-all duration-100 hover:text-orange-500 cursor-pointer">The Growth of Gaming</span>
                 <span class="text-lg text-gray-500">How the pandemic has sparked fresh opportunities.</span>
             </div>
         </div>
