@@ -8,3 +8,31 @@
         @apply hover:text-orange-400
     }
 }
+
+:root {
+    --ratio: 0.6;
+
+    --font1-sizeVW: 15vh;
+    --font1-sizeVH: calc(var(--ratio) * 15vw);
+
+    --font3-sizeVW:10vh;
+    --font3-sizeVH: calc(var(--ratio)* 10vw);
+    
+    --font2-sizeVW: 8vh;
+    --font2-sizeVH: calc(var(--ratio) * 6vw);
+}
+
+@media screen and (max-width: 685px) {  
+
+    #number {  
+        font-size: var(--font1-sizeVH); 
+    } 
+
+    #text {  
+        font-size: var(--font2-sizeVH);
+    } 
+
+    #title{
+        font-size: var(--font3-sizeVH);
+    }
+}

@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="./dist/output.css">
     <link rel="stylesheet" href="./src/input.css">
 </head>
-<body class="flex flex-col items-center  pt-20 w-screen bg-gray-200 pb-10 overflow-hidden">
+<body class="flex flex-col items-center  pt-20 w-screen bg-gray-200 pb-10 overflow-x-hidden">
     <!-- header -->
-    <section class="flex flex-row justify-between items-center h-12 w-[80%] ">
+    <section class="flex flex-row justify-between items-center h-12 w-[80%] mobile:w-[90%]">
         <!-- page logo box -->
         <div class="w-[64px] h-[40px]">
             <img  src="assets/images/logo.svg" alt="">
         </div>
         <!-- toggle navbar open button -->
         <div>
-            <button id="nav-toggle-open"  class="hidden mobile:inline hover:cursor-pointer hover:cursor-pointer">
+            <button id="nav-toggle-open"  class="hidden mobile:inline hover:cursor-pointer">
                 <svg class="fill-current text-gray-700" width="40" height="20" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/></g></svg>
             </button>
         </div>
@@ -45,21 +45,22 @@
     </section>
 
     <!-- main section -->
-    <section class="flex flex-row justify-between w-[80%] mt-10 h-[685px] mobile:flex-col mobile:justify-normal mobile:items-center mobile:h-auto">
+    <section class="flex flex-row justify-between w-[80%] mt-10 h-auto mobile:flex-col mobile:justify-normal mobile:items-center mobile:h-auto mobile:w-[90%]">
         <!-- main left box -->
-        <div class="flex flex-col gap-10 w-[68%]">
+        <div class="flex flex-col gap-10 w-[68%] mobile:w-auto">
             <!-- image box -->
-            <div>
-                <img src="./assets/images/image-web-3-desktop.jpg" alt="">
+            <div >
+                <img class="mobile:hidden" src="./assets/images/image-web-3-desktop.jpg" alt="">
+                <img class="hidden mobile:block" src="assets/images/image-web-3-mobile.jpg" alt="">
             </div>
             <!-- text box -->
-            <div class="flex flex-row justify-between gap-5">
+            <div class="flex flex-row justify-between gap-5 mobile:flex-col mobile:justify-normal">
                 <!-- title box -->
-                <div class="w-[45%] text-7xl font-bold">
+                <div class="w-[45%] text-7xl font-bold mobile:w-auto mobile:text-6xl">
                     <span>The Bright Future of Web 3.0?</span>
                 </div>
                 <!-- content + button box -->
-                <div class="w-[50%] flex flex-col justify-between">
+                <div class="w-[50%] flex flex-col justify-between mobile:w-auto mobile:gap-5">
                     <span class="text-xl leading-10 text-gray-600"> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
                         But is it really fulfilling its promise?</span>
                         <button class="tracking-[0.3em] w-[200px] h-[60px] bg-red-500 text-base font-bold text-gray-100 hover:bg-gray-900 transition-all duration-100">
@@ -69,9 +70,9 @@
             </div>
         </div>
         <!-- main right box -->
-        <div class="h-full w-[30%] bg-gray-900 flex justify-center items-center">
+        <div class="h-auto w-[30%] bg-gray-900 flex justify-center items-center mobile:w-auto mobile:h-[850px] mobile:mt-10">
             <!-- content holder box -->
-            <div class="flex flex-col items-center w-[90%] h-[90%]">
+            <div class="flex flex-col items-center w-[90%] h-[90%] ">
                 <!-- new box -->
                 <div class="w-full">
                     <span class="font-bold text-orange-400 text-6xl">New</span>
@@ -97,45 +98,52 @@
             </div>        
         </div>
     </section>
+
     <!-- text cards section -->
-    <section class="flex justify-between gap-8 w-[80%] h-[160px] my-20 ">
+    <section class="flex justify-between gap-8 w-[80%] h-[160px] my-20 mobile:flex-col  mobile:justify-evenly mobile:h-auto mobile:w-[90%]">
         <!-- first card -->
-        <div class="w-[30%] h-[160px] flex justify-between">
+        <div class="w-[460px] h-[160px] flex justify-between mobile:w-auto mobile:mb-5 mobile:h-auto">
             <!-- image -->
-            <div class="mr-8">
+            <div class="mr-8 mobile:mr-5">
                 <img class="h-full" src="./assets/images/image-retro-pcs.jpg" alt="">
             </div>
             <!-- texts -->
             <div class="flex flex-col justify-between w-[300px]">
-                <span class="text-5xl text-gray-400 font-bold">01</span>
-                <span class="text-2xl font-bold transition-all duration-100 hover:text-orange-500 cursor-pointer">Reviving Retro PCs</span>
-                <span class="text-lg text-gray-500">What happens when old PCs are given modern upgrades?</span>
+                <span id="number" class="text-5xl text-gray-400 font-bold  mobile:text-font">01</span>
+
+                <span id="title" class="text-2xl font-bold transition-all duration-100 hover:text-orange-500 cursor-pointer mobile:text-lg leading-9">Reviving Retro PCs</span>
+
+                <span id="text" class=" text-gray-500 leading-normal">What happens when old PCs are given modern upgrades?</span>
             </div>
         </div>
         <!-- second card -->
-        <div class="w-[30%] h-[160px] flex justify-between">
+        <div class="w-[460px] h-[160px] flex justify-between mobile:w-auto mobile:mb-5 mobile:h-auto" >
             <!-- image -->
-            <div class="mr-8">
+            <div class="mr-8 mobile:mr-5">
                 <img class="h-full" src="./assets/images/image-top-laptops.jpg" alt="">
             </div>
             <!-- texts -->
             <div class="flex flex-col justify-between w-[300px]">
-                <span class="text-5xl text-gray-400 font-bold">02</span>
-                <span class="text-2xl font-bold transition-all duration-100 hover:text-orange-500 cursor-pointer">Top 10 Laptops of 2022</span>
-                <span class="text-lg text-gray-500">Our best picks for various needs and budgets.</span>
+                <span id="number" class="text-5xl text-gray-400 font-bold mobile:text-3xl">02</span>
+
+                <span id="title" class="text-2xl font-bold transition-all duration-100 hover:text-orange-500 cursor-pointer leading-tight ">Top 10 Laptops of 2022</span>
+
+                <span id="text" class="text-lg text-gray-500 leading-normal">Our best picks for various needs and budgets.</span>
             </div>
         </div>
         <!-- third card -->
-        <div class="w-[30%] h-[160px] flex justify-between">
+        <div class="w-[460px] h-[160px] flex justify-between mobile:w-auto mobile:h-auto">
             <!-- image -->
-            <div class="mr-8">
+            <div class="mr-8 mobile:mr-5">
                 <img class="h-full" src="./assets/images/image-gaming-growth.jpg" alt="">
             </div>
             <!-- texts -->
-            <div class="flex flex-col justify-between w-[300px]">
-                <span class="text-5xl text-gray-400 font-bold">03</span>
-                <span class="text-2xl font-bold transition-all duration-100 hover:text-orange-500 cursor-pointer">The Growth of Gaming</span>
-                <span class="text-lg text-gray-500">How the pandemic has sparked fresh opportunities.</span>
+            <div class="flex flex-col justify-between w-[300px] ">
+                <span id="number" class="text-5xl text-gray-400 font-bold ">03</span>
+
+                <span id="title" class="text-2xl font-bold transition-all duration-100 hover:text-orange-500 cursor-pointer leading-tight">The Growth of Gaming</span>
+
+                <span id="text" class="text-lg text-gray-500 leading-normal">How the pandemic has sparked fresh opportunities.</span>
             </div>
         </div>
     </section>
