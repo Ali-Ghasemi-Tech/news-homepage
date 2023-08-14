@@ -36,3 +36,19 @@
         font-size: var(--font3-sizeVH);
     }
 }
+
+@media screen and (min-width: 600px) and (max-width: 1440px) {  
+
+    #number {  
+        font-size: calc(var(--ratio)* 6vw); 
+        font-weight: bold;
+    } 
+
+    #text {  
+        font-size: calc(var(--ratio)* 2vw);
+    } 
+
+    #title{
+        font-size: calc(var(--ratio)* 3vw);
+    }
+}

@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./dist/output.css">
     <link rel="stylesheet" href="./src/input.css">
 </head>
-<body class="flex flex-col items-center  pt-20 w-screen bg-gray-200 pb-10 overflow-x-hidden">
+<body class="flex flex-col items-center  pt-20 w-screen bg-white pb-10 overflow-x-hidden">
     <!-- header -->
-    <section class="flex flex-row justify-between items-center h-12 w-[80%] mobile:w-[90%]">
+    <section class="flex flex-row justify-between items-center h-12 w-[90%] mobile:w-[90%] px-10">
         <!-- page logo box -->
         <div class="w-[64px] h-[40px]">
             <img  src="assets/images/logo.svg" alt="">
@@ -45,7 +45,7 @@
     </section>
 
     <!-- main section -->
-    <section class="flex flex-row justify-between w-[80%] mt-10 h-auto mobile:flex-col mobile:justify-normal mobile:items-center mobile:h-auto mobile:w-[90%]">
+    <section class="flex flex-row justify-between w-[90%] mt-10 h-auto mobile:flex-col mobile:justify-normal mobile:items-center mobile:h-auto mobile:w-[90%] px-10">
         <!-- main left box -->
         <div class="flex flex-col gap-10 w-[68%] mobile:w-auto">
             <!-- image box -->
@@ -57,7 +57,7 @@
             <div class="flex flex-row justify-between gap-5 mobile:flex-col mobile:justify-normal">
                 <!-- title box -->
                 <div class="w-[45%] text-7xl font-bold mobile:w-auto mobile:text-6xl">
-                    <span>The Bright Future of Web 3.0?</span>
+                    <span >The Bright Future of Web 3.0?</span>
                 </div>
                 <!-- content + button box -->
                 <div class="w-[50%] flex flex-col justify-between mobile:w-auto mobile:gap-5">
@@ -82,17 +82,17 @@
                     <!-- first new text -->
                     <div class="flex flex-col gap-3 justify-center border-b-gray-500 border-solid border-b h-[33%] group hover:cursor-pointer">
                         <span class="font-bold text-2xl text-gray-100 text-start group-hover:text-orange-400 group-hover:cursor-pointer transition-all duration-100">Hydrogen VS Electric Cars</span>
-                        <span class="text-xl text-gray-400 leading-8">Will hydrogen-fueled cars ever catch up to EVs?</span>
+                        <span id="text" class="text-xl text-gray-400 leading-8">Will hydrogen-fueled cars ever catch up to EVs?</span>
                     </div>
                     <!-- second new text -->
                     <div class="flex flex-col gap-3 justify-center border-b-gray-500 border-solid border-b h-[33%] group hover:cursor-pointer">
                         <span class="font-bold text-2xl text-gray-100 text-start group-hover:text-orange-400 group-hover:cursor-pointer transition-all duration-100">The Downsides of AI Artistry</span>
-                        <span class="text-xl text-gray-400 leading-8">What are the possible adverse effects of on-demand AI image generation?</span>
+                        <span id="text" class="text-xl text-gray-400 leading-8">What are the possible adverse effects of on-demand AI image generation?</span>
                     </div>
                     <!-- third new text -->
                     <div class="flex flex-col gap-3 justify-center h-[33%] group hover:cursor-pointer">
                         <span class="font-bold text-2xl text-gray-100 text-start group-hover:text-orange-400 transition-all duration-100">Is VC Funding Drying Up?</span>
-                        <span class="text-xl text-gray-400 leading-8">Private funding by VC firms is down 50% YOY. We take a look at what that means.</span>
+                        <span id="text" class="text-xl text-gray-400 leading-8">Private funding by VC firms is down 50% YOY. We take a look at what that means.</span>
                     </div>
                 </div>
             </div>        
@@ -100,9 +100,9 @@
     </section>
 
     <!-- text cards section -->
-    <section class="flex justify-between gap-8 w-[80%] h-[160px] my-20 mobile:flex-col  mobile:justify-evenly mobile:h-auto mobile:w-[90%]">
+    <section class="flex justify-between gap-2 w-[90%] h-[160px] my-20 mobile:flex-col  mobile:justify-evenly mobile:h-auto mobile:w-[90%] px-10 ">
         <!-- first card -->
-        <div class="w-[460px] h-[160px] flex justify-between mobile:w-auto mobile:mb-5 mobile:h-auto">
+        <div class="  flex  mobile:w-auto mobile:mb-5 mobile:h-auto">
             <!-- image -->
             <div class="mr-8 mobile:mr-5">
                 <img class="h-full" src="./assets/images/image-retro-pcs.jpg" alt="">
@@ -117,7 +117,7 @@
             </div>
         </div>
         <!-- second card -->
-        <div class="w-[460px] h-[160px] flex justify-between mobile:w-auto mobile:mb-5 mobile:h-auto" >
+        <div class=" flex  mobile:w-auto mobile:mb-5 mobile:h-auto" >
             <!-- image -->
             <div class="mr-8 mobile:mr-5">
                 <img class="h-full" src="./assets/images/image-top-laptops.jpg" alt="">
@@ -132,7 +132,7 @@
             </div>
         </div>
         <!-- third card -->
-        <div class="w-[460px] h-[160px] flex justify-between mobile:w-auto mobile:h-auto">
+        <div class="flex mobile:w-auto mobile:h-auto">
             <!-- image -->
             <div class="mr-8 mobile:mr-5">
                 <img class="h-full" src="./assets/images/image-gaming-growth.jpg" alt="">
