@@ -13,13 +13,13 @@
     --ratio: 0.6;
 
     --font1-sizeVW: 15vh;
-    --font1-sizeVH: calc(var(--ratio) * 15vw);
+    --font1-sizeVH: calc(var(--ratio) * 14vw);
 
     --font3-sizeVW:10vh;
-    --font3-sizeVH: calc(var(--ratio)* 10vw);
+    --font3-sizeVH: calc(var(--ratio)* 9vw);
     
     --font2-sizeVW: 8vh;
-    --font2-sizeVH: calc(var(--ratio) * 6vw);
+    --font2-sizeVH: calc(var(--ratio) * 5vw);
 }
 
 @media screen and (max-width: 685px) {  
@@ -37,18 +37,17 @@
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1440px) {  
-
+@media screen and (min-width: 1021px) and (max-width: 1440px) {  
     #number {  
-        font-size: calc(var(--ratio)* 6vw); 
+        font-size: calc(var(--ratio)* 5.5vw); 
         font-weight: bold;
     } 
 
     #text {  
-        font-size: calc(var(--ratio)* 2vw);
+        font-size: calc(var(--ratio)* 2.1vw);
     } 
 
     #title{
-        font-size: calc(var(--ratio)* 3vw);
+        font-size: calc(var(--ratio)* 2.9vw);
     }
 }
