@@ -13,7 +13,7 @@ navToggleClose.addEventListener('click' , () => {
     filter.classList.add('hidden');
 
 });
-// smooth scroll for links
+// smooth scroll for linksnp
 let anchorSelector  = 'a[href^="#"]';
 
 let anchorList = document.querySelectorAll(anchorSelector);

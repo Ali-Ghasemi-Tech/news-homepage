@@ -681,6 +681,14 @@ video {
   width: 100vw;
 }
 
+.w-\[40\%\] {
+  width: 40%;
+}
+
+.w-\[65\%\] {
+  width: 65%;
+}
+
 .min-w-\[300px\] {
   min-width: 300px;
 }
@@ -811,20 +819,12 @@ video {
   padding-top: 5rem;
 }
 
-.pt-32 {
-  padding-top: 8rem;
-}
-
-.pt-40 {
-  padding-top: 10rem;
-}
-
-.pt-28 {
-  padding-top: 7rem;
-}
-
 .pt-24 {
   padding-top: 6rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
 }
 
 .text-start {
@@ -1147,12 +1147,12 @@ video {
     padding-left: 32px;
   }
 
-  .mobile\:pt-\[140px\] {
-    padding-top: 140px;
-  }
-
   .mobile\:pt-10 {
     padding-top: 2.5rem;
+  }
+
+  .mobile\:pt-\[140px\] {
+    padding-top: 140px;
   }
 
   .mobile\:text-6xl {
