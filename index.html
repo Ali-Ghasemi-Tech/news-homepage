@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./dist/output.css">
     <link rel="stylesheet" href="./src/input.css">
 </head>
-<body class="flex flex-col items-center  pt-20 w-screen bg-white pb-10 overflow-x-hidden">
+<body class="flex flex-col items-center  pt-24 w-screen bg-white pb-40 overflow-x-hidden">
     <!-- header -->
-    <section class="flex flex-row justify-between items-center h-12 w-[90%] mobile:w-[90%] ">
+    <section class="flex flex-row justify-between items-center h-20 fixed top-0 right-0 left-0 px-[100px] mobile:px-7 bg-white z-50">
         <!-- page logo box -->
         <div class="w-[64px] h-[40px]">
             <img  src="assets/images/logo.svg" alt="">
@@ -35,9 +35,9 @@
 
             <div class="flex gap-[10%] no-underline text-xl justify-end  mobile:flex-col mobile:gap-4 mobile:justify-start mobile:pt-[140px] mobile:pl-[32px]">
                 <a class="link-hover transition-all duration-100" href="">Home</a>
-                <a class="link-hover transition-all duration-100" href="">New</a>
-                <a class="link-hover transition-all duration-100" href="">Popular</a>
-                <a class="link-hover transition-all duration-100" href="">Trending</a>
+                <a class="link-hover transition-all duration-100" href="#main">Popular</a>
+                <a class="link-hover transition-all duration-100" href="#new">New</a>
+                <a class="link-hover transition-all duration-100" href="#text-cards">Trending</a>
                 <a class="link-hover transition-all duration-100" href="">Categories</a>
             </div>
             
@@ -45,13 +45,13 @@
     </section>
 
     <!-- main section -->
-    <section class="flex flex-row justify-between w-[90%] mt-10 h-auto mobile:flex-col mobile:justify-normal mobile:items-center mobile:h-auto mobile:w-[90%] ">
+    <section  class="flex flex-row justify-between w-[90%] pt-32 mobile:pt-10 h-auto mobile:flex-col mobile:justify-normal mobile:items-center mobile:h-auto mobile:w-[90%] ">
         <!-- main left box -->
-        <div class="flex flex-col gap-10 w-[68%] mobile:w-auto">
+        <div id="main" class="flex flex-col gap-10 w-[68%] mobile:w-full">
             <!-- image box -->
             <div >
                 <img class="mobile:hidden" src="./assets/images/image-web-3-desktop.jpg" alt="">
-                <img class="hidden mobile:block" src="assets/images/image-web-3-mobile.jpg" alt="">
+                <img class="hidden mobile:block mobile:w-full" src="assets/images/image-web-3-mobile.jpg" alt="">
             </div>
             <!-- text box -->
             <div class="flex flex-row justify-between gap-5 mobile:flex-col mobile:justify-normal">
@@ -70,7 +70,7 @@
             </div>
         </div>
         <!-- main right box -->
-        <div class="h-auto w-[30%] bg-gray-900 flex justify-center items-center mobile:w-auto pt-20 pb-10 mobile:mt-10">
+        <div id="new" class="h-auto w-[30%] bg-gray-900 flex justify-center items-center mobile:w-full pt-20 pb-10 mobile:mt-10">
             <!-- content holder box -->
             <div class="flex flex-col items-center w-[90%] h-[90%] ">
                 <!-- new box -->
@@ -100,31 +100,34 @@
     </section>
 
     <!-- text cards section -->
-    <section class="flex justify-between gap-2 w-[90%] h-[160px] my-20 mobile:flex-col  mobile:justify-evenly mobile:h-auto mobile:w-[90%]  overflow-hidden">
+    <section id="text-cards" class="flex justify-between gap-2 w-[90%] my-20 mobile:flex-col  mobile:justify-evenly mobile:h-auto mobile:w-[90%]  overflow-hidden">
         <!-- first card -->
-        <div class=" flex min-w-[300px]  mobile:w-auto mobile:mb-5 mobile:h-auto" >
+
+        <div class=" flex min-w-[300px] max-w-[504px] mobile:max-w-none mobile:w-auto mobile:mb-5 mobile:h-auto " >
             <!-- image -->
             <div class="mr-8 mobile:mr-5">
                 <img class="h-full" src="./assets/images/image-retro-pcs.jpg" alt="">
             </div>
             <!-- texts -->
-            <div class="flex flex-col justify-between w-[300px]">
-                <span id="number" class="text-5xl text-gray-400 font-bold mobile:text-3xl">01</span>
+            <div class="flex flex-col justify-between mobile:w-[65%]">
+                <span id="number" class="text-5xl text-gray-400 font-bold">01</span>
 
                 <span id="title" class="text-2xl font-bold transition-all duration-100 hover:text-orange-500 cursor-pointer leading-tight ">Reviving Retro PCs</span>
 
                 <span id="text" class="text-lg text-gray-500 leading-normal">What happens when old PCs are given modern upgrades?</span>
             </div>
         </div>
+
+        
         <!-- second card -->
-        <div class=" flex min-w-[300px]  mobile:w-auto mobile:mb-5 mobile:h-auto" >
+        <div class=" flex min-w-[300px] max-w-[504px] mobile:max-w-none mobile:w-auto mobile:mb-5 mobile:h-auto" >
             <!-- image -->
             <div class="mr-8 mobile:mr-5">
                 <img class="h-full" src="./assets/images/image-top-laptops.jpg" alt="">
             </div>
             <!-- texts -->
-            <div class="flex flex-col justify-between w-[300px]">
-                <span id="number" class="text-5xl text-gray-400 font-bold mobile:text-3xl">02</span>
+            <div class="flex flex-col justify-between mobile:w-[65%]">
+                <span id="number" class="text-5xl text-gray-400 font-bold ">02</span>
 
                 <span id="title" class="text-2xl font-bold transition-all duration-100 hover:text-orange-500 cursor-pointer leading-tight ">Top 10 Laptops of 2022</span>
 
@@ -132,14 +135,14 @@
             </div>
         </div>
         <!-- third card -->
-        <div class="flex min-w-[300px] mobile:w-auto mobile:h-auto">
+        <div class=" flex min-w-[300px] max-w-[504px] mobile:max-w-none mobile:w-auto mobile:mb-5 mobile:h-auto">
             <!-- image -->
             <div class="mr-8 mobile:mr-5">
                 <img class="h-full" src="./assets/images/image-gaming-growth.jpg" alt="">
             </div>
             <!-- texts -->
-            <div class="flex flex-col justify-between w-[300px] ">
-                <span id="number" class="text-5xl text-gray-400 font-bold ">03</span>
+            <div class="flex flex-col justify-between mobile:w-[65%]">
+                <span id="number" class="text-5xl text-gray-400 font-bold">03</span>
 
                 <span id="title" class="text-2xl font-bold transition-all duration-100 hover:text-orange-500 cursor-pointer leading-tight">The Growth of Gaming</span>
 
